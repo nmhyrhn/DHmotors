@@ -49,9 +49,6 @@ src/
 └── util/ // 유틸리티
 └── RandomUtil.java // 계약번호, 차량 번호판 생성 유틸
 
-yaml
-코드 복사
-
 ---
 
 ## 🚀 실행 방법
@@ -65,6 +62,7 @@ bash
 코드 복사
 javac -d out src/**/*.java
 java -cp out Main
+
 📖 사용 예시
 diff
 코드 복사
