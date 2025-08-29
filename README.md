@@ -22,7 +22,8 @@
 
 ---
 
-## 📂 프로젝트 구조  
+## 📂 프로젝트 구조
+
 src/
 └── dhmotors/
 ├── Main.java // 실행 메인 프로그램
@@ -46,7 +47,7 @@ src/
 │ ├── Contract.java // 계약 정보 관리
 │ └── Printable.java // 계약서 출력 인터페이스
 │
-└── util/
+└── util/ // 유틸리티
 └── RandomUtil.java // 계약번호, 차량 번호판 생성 유틸
 
 ---
