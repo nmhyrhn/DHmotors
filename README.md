@@ -47,8 +47,9 @@ src/
 │ ├── Contract.java // 계약 정보 관리
 │ └── Printable.java // 계약서 출력 인터페이스
 │
-└── util/ // 유틸리티
-└── RandomUtil.java // 계약번호, 차량 번호판 생성 유틸
+├── util/ // 유틸리티
+│ └── RandomUtil.java // 계약번호, 차량 번호판 생성 유틸
+└──
 ```
 ---
 
