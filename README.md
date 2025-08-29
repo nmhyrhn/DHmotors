@@ -1,70 +1,73 @@
-🚗 DH모터스 신차 출고 시스템
-📌 프로젝트 소개
+# 🚗 DH모터스 신차 출고 시스템
 
-이 프로젝트는 자동차 출고 계약 시스템을 콘솔 기반으로 구현한 프로그램입니다.
-고객 정보를 입력받고, 차종/옵션/색상을 선택하면 계약서가 자동 생성됩니다.
+## 📌 프로젝트 소개
+이 프로젝트는 **자동차 출고 계약 시스템**을 콘솔 기반으로 구현한 프로그램입니다.  
+고객 정보를 입력받고, 차종/옵션/색상을 선택하면 **계약서가 자동 생성**됩니다.
 
-🛠 기술 스택
+---
 
-Language: Java
+## 🛠 기술 스택
+- **Language**: Java  
+- **IDE**: IntelliJ IDEA  
+- **버전관리**: Git & GitHub  
 
-IDE: IntelliJ IDEA
+---
 
-버전관리: Git & GitHub
+## ⚙️ 주요 기능
+- 고객 정보 입력 (이름, 출고 희망일)  
+- 차종 선택 (세단, SUV, 대형)  
+- 차량 옵션 선택 (예: 선팅, 유리막, 둘다, 안함)  
+- 차량 색상 선택 (블랙, 화이트, 노랑)  
+- 계약서 자동 생성 (계약번호, 차량 번호판 랜덤 생성 포함)  
 
-⚙️ 주요 기능
+---
 
-고객 정보 입력 (이름, 출고 희망일)
-
-차종 선택 (세단, SUV, 대형)
-
-차량 옵션 선택 (예: 선팅, 유리막, 둘다, 안함)
-
-차량 색상 선택 (블랙, 화이트, 노랑)
-
-계약서 자동 생성 (계약번호, 차량 번호판 랜덤 생성 포함)
-
-📂 프로젝트 구조
+## 📂 프로젝트 구조
 src/
- └── dhmotors/
-      ├── Main.java               // 실행 메인 프로그램
-      │
-      ├── car/                    // 차량 관련 클래스
-      │     ├── Car.java           // 차량 추상 클래스
-      │     ├── Sedan.java         // 세단 추상화
-      │     ├── Suv.java           // SUV 추상화
-      │     ├── Large.java         // 대형차 추상화
-      │     ├── Hyerante.java      // 세단 자식 클래스
-      │     ├── HcConvertible.java // 세단 자식 클래스
-      │     ├── H70.java           // 세단 자식 클래스
-      │     ├── Ssohento.java      // SUV 자식 클래스
-      │     ├── Palihyde.java      // SUV 자식 클래스
-      │     ├── HJ80.java          // SUV 자식 클래스
-      │     ├── Riven.java         // 대형 자식 클래스
-      │     └── Entaria.java       // 대형 자식 클래스
-      │
-      ├── contract/                // 계약 관련 클래스
-      │     ├── Customer.java      // 고객 정보 관리
-      │     ├── Contract.java      // 계약 정보 관리
-      │     └── Printable.java     // 계약서 출력 인터페이스
-      │
-      └── util/                    // 유틸리티
-            └── RandomUtil.java    // 계약번호, 차량 번호판 생성 유틸
+└── dhmotors/
+├── Main.java // 실행 메인 프로그램
+│
+├── car/ // 차량 관련 클래스
+│ ├── Car.java // 차량 추상 클래스
+│ ├── Sedan.java // 세단 추상화
+│ ├── Suv.java // SUV 추상화
+│ ├── Large.java // 대형차 추상화
+│ ├── Hyerante.java // 세단 자식 클래스
+│ ├── HcConvertible.java // 세단 자식 클래스
+│ ├── H70.java // 세단 자식 클래스
+│ ├── Ssohento.java // SUV 자식 클래스
+│ ├── Palihyde.java // SUV 자식 클래스
+│ ├── HJ80.java // SUV 자식 클래스
+│ ├── Riven.java // 대형 자식 클래스
+│ └── Entaria.java // 대형 자식 클래스
+│
+├── contract/ // 계약 관련 클래스
+│ ├── Customer.java // 고객 정보 관리
+│ ├── Contract.java // 계약 정보 관리
+│ └── Printable.java // 계약서 출력 인터페이스
+│
+└── util/ // 유틸리티
+└── RandomUtil.java // 계약번호, 차량 번호판 생성 유틸
 
-🚀 실행 방법
+yaml
+코드 복사
 
-저장소 클론하기
+---
 
+## 🚀 실행 방법
+
+### 1. 저장소 클론하기
+```bash
 git clone https://github.com/사용자명/저장소명.git
 cd 저장소명
-
-
-컴파일 & 실행
-
+2. 컴파일 & 실행
+bash
+코드 복사
 javac -d out src/**/*.java
 java -cp out Main
-
 📖 사용 예시
+diff
+코드 복사
 === DH모터스 신차 출고 시스템 ===
 고객명 입력: 홍길동
 출고 희망일 입력 (YYYY-MM-DD): 2025-09-15
@@ -77,10 +80,10 @@ java -cp out Main
 - 안함 (0만원 추가)
 옵션 입력: 선팅
 색상 선택 (블랙/화이트/노랑): 화이트
+출력 예시:
 
-
-출력:
-
+makefile
+코드 복사
 === 계약서 ===
 계약번호: 202509151234
 차량번호: 12A3456
@@ -90,7 +93,6 @@ java -cp out Main
 옵션: 선팅
 색상: 화이트
 총 가격: 2,030만원
-
 📜 라이선스
-
-MIT License
+이 프로젝트는 MIT License 하에 배포됩니다.
+자세한 내용은 LICENSE 파일을 참고하세요.
