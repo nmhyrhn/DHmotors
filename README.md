@@ -63,8 +63,6 @@ java -cp out dhmotors.Main
 
 
 📖 사용 예시
-makefile
-코드 복사
 
 === DH모터스 신차 출고 시스템 ===
 
