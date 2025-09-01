@@ -22,13 +22,14 @@ public class Main {
 
         switch(type) {
             case 1: car = new Hyerante(); break; // 예시
-            // case 2: car = new Ssohento(); break;
-            // case 3: car = new Riven(); break;
+             case 2: car = new Ssohento(); break;
+             case 3: car = new Riven(); break;
             default: System.out.println("잘못 입력"); return;
         }
 
         car.printOptions();
         sc.nextLine(); // 버퍼 비우기
+        System.out.println("옵션 선택 (선팅/유리막/둘다/없음): " );
         System.out.print("옵션 입력: ");
         String option = sc.nextLine();
 
