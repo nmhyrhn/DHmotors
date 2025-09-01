@@ -3,7 +3,7 @@ package DHmotors.Car;
 public class Ssohento extends Car {
 
     //car를 부모로 상속 받음
-    public Hyerante() { super("쏘헨토", 3500); }
+    public Ssohento() { super("쏘헨토", 3500); }
     //super로 부모인 car 호출
     @Override
     //사용? 모르겠음
