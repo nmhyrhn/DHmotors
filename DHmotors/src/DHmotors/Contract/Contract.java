@@ -21,7 +21,9 @@ public class Contract implements Printable {
         this.finalPrice = car.getFinalPrice(option);
     }
 
-    public Contract(String contractNo, String plateNo, Customer customer, Car car, String option, String color) {
+    public Contract(String contractNo, String plateNo, Customer customer, Car car, String option, String color, String contractNo1, String plateNo1) {
+        this.contractNo = contractNo1;
+        this.plateNo = plateNo1;
     }
 
     @Override

@@ -4,6 +4,12 @@ public class HJ80 extends Car {
 
     //car를 부모로 상속 받음
     public HJ80() { super("헤네시스", 9000); }
+
+    @Override
+    protected void setOptinos() {
+
+    }
+
     //super로 부모인 car 호출
     @Override
     //사용? 모르겠음

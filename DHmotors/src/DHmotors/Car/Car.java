@@ -4,12 +4,12 @@ import java.util.*;
 
 public abstract class Car{
     protected String modelName;
-    protected String basePrice;
+    protected int basePrice;
     protected Map<String, Integer> options = new HashMap<>();
     //map 사용해서 옵션의 키와 벨류 값 지정 (선팅, 가격)
     //protected를 사용해 패키지 내에서만 상속 허용
 
-    public Car(String modelName, String basePrice){
+    public Car(String modelName, int basePrice){
         this.modelName=modelName;
         this.basePrice=basePrice;
         //this 자신의 객체를 의미
@@ -34,7 +34,3 @@ public abstract class Car{
     //사용? 모르겠음
     protected abstract void setOptions();
 }
-    }
-
-}
-

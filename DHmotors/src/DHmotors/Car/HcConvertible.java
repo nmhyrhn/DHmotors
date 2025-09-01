@@ -4,6 +4,12 @@ public class HcConvertible extends Car {
 
     //car를 부모로 상속 받음
     public HcConvertible() { super("Hc컨버터블", 5000); }
+
+    @Override
+    protected void setOptinos() {
+
+    }
+
     //super로 부모인 car 호출
     @Override
     protected void setOptions() {
