@@ -1,0 +1,15 @@
+package DHmotors.Car;
+
+public class HcConvertible extends Car {
+
+    //car를 부모로 상속 받음
+    public HcConvertible() { super("Hc컨버터블", 5000); }
+    //super로 부모인 car 호출
+    @Override
+    protected void setOptions() {
+        options.put("선팅", 50);
+        options.put("유리막", 80);
+        options.put("둘다", 100);
+        options.put("안함", 0);
+    }
+}

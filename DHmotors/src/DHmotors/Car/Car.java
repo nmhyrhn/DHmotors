@@ -1,4 +1,4 @@
-package Car;
+package DHmotors.Car;
 
 import java.util.*;
 
@@ -29,6 +29,10 @@ public abstract class Car{
     }
     // fianl 값이 변하지 않음?? get 사용해서 ???임
     public String getModelName() { return modelName; }
+
+    //super로 부모인 car 호출
+    //사용? 모르겠음
+    protected abstract void setOptions();
 }
     }
 

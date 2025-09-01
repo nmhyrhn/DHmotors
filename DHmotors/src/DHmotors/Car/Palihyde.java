@@ -1,10 +1,16 @@
-package Car;
+package DHmotors.Car;
 
-public class Hyerante extends Car {
+public class Palihyde extends Car {
 
     //car를 부모로 상속 받음
-    public Hyerante() { super("혜란테", 2000); }
-        //super로 부모인 car 호출
+    public Palihyde() { super("펠리헤이드", 6000); }
+
+    @Override
+    protected void setOptinos() {
+
+    }
+
+    //super로 부모인 car 호출
     @Override
     //사용? 모르겠음
     protected void setOptions() {
@@ -13,5 +19,4 @@ public class Hyerante extends Car {
         options.put("둘다", 70);
         options.put("안함", 0);
     }
-}
 }
