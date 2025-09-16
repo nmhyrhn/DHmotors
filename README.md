@@ -96,6 +96,3 @@ java -cp out dhmotors.Main
 옵션: 선팅
 색상: 화이트
 총 가격: 2,030만원
-
-📜 라이선스
-이 프로젝트는 MIT License 하에 배포됩니다.
